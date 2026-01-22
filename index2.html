@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Gradient -->
+    <div class="bg-gradient"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <!-- Desktop Navigation -->
+            <div class="nav-desktop">
+
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#skills" class="nav-link">Compétences</a></li>
+                    <li><a href="#projects" class="nav-link">Projets</a></li>
+                    <li><a href="#experience" class="nav-link">Expériences</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile">
+                <div class="nav-mobile-header">
+                    <div class="nav-logo">Portfolio</div>
+                    <button class="nav-toggle" id="navToggle">
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+                <div class="nav-mobile-menu" id="navMobileMenu">
+                    <ul class="nav-mobile-list">
+                        <li><a href="#about" class="nav-mobile-link">À propos</a></li>
+                        <li><a href="#skills" class="nav-mobile-link">Compétences</a></li>
+                        <li><a href="#projects" class="nav-mobile-link">ProjetS</a></li>
+                        <li><a href="#experience" class="nav-mobile-link">Expériences</a></li>
+                        <li><a href="#contact" class="nav-mobile-link">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Left Content -->
+                <div class="hero-text">
+                    <div class="hero-intro">
+                        <p class="hero-greeting">Salut, je suis</p>
+                        <h1 class="hero-name">Gloire Jb NNANG</h1>
+                        <h2 class="hero-title">Informaticien</h2>
+                    </div>
+                    
+                    <p class="hero-description">
+                        Je suis un développeur orienté solutions, motivé par la résolution de problèmes concrets et l’utilité réelle des systèmes que je conçois. À travers mes projets, je m’intéresse autant à la structure globale (rôles, interfaces, flux) 
+                        qu’à l’expérience des utilisateurs finaux. J’accorde une grande importance à la clarté, au code propre et à la compréhension des besoins avant la technologie elle-même. Mon approche repose sur l’apprentissage continu, l’analyse et la 
+                        volonté de créer des plateformes simples, fiables et adaptées à des contextes réels comme l’éducation, la santé ou les services numériques.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="viewWorkBtn">👉 Voir mes Réalisations</button>
+                        <button class="btn btn-secondary" id="getInTouchBtn">👉 Contactez-moi</button>
+                    </div>
+                    
+                    <div class="hero-social">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15,3 21,3 21,9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Content - Profile Image -->
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-border">
+                            <div class="profile-bg">
+                                <img src="images/jb10.png" class="profile-image">
+                            </div>
+                        </div>
+                        <div class="profile-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">À propos de moi</h2>
+                <p class="section-description">
+                    J’aime créer des solutions innovantes et travailler avec des technologies modernes afin de concevoir des expériences utilisateur de qualité..
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">Compétences</h2>
+                <p class="section-description">
+                    Ici, je présente mes compétences techniques, les outils et les technologies avec lesquels je travaille..
+                </p>
+                <div class="skills-grid">
+                    <div class="skill-card">React</div>
+                    <div class="skill-card">TypeScript</div>
+                    <div class="skill-card">javascript</div>
+                    <div class="skill-card">Python</div>
+                    <div class="skill-card">Django</div>
+                    <div class="skill-card">Mysql</div>
+                    <div class="skill-card">linux</div>
+                    <div class="skill-card">Github</div>
+                    <div class="skill-card">firebase</div>
+                    <div class="skill-card">figma</div>
+                    <div class="skill-card">Canva</div>
+                    <div class="skill-card">IA générative</div>
+                    <div class="skill-card">Microsoft Word</div>
+                    <div class="skill-card">Microsoft Powerpoint</div>
+                    <div class="skill-card">Compétences Digitales</div>
+                    <div class="skill-card">Création de Contenu</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <div class="section-content projects-content">
+                <h2 class="section-title">Mes Projets</h2>
+                <p class="section-description">
+                    Une sélection de mes meilleurs travaux et des projets que j’ai réalisés.
+                </p>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/hopital.png" alt="hopital dashboard">
+                            <div class="project-overlay"></div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://h-pital-direct.vercel.app/" class="project-link"
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Prise de 𝑬-𝑹𝒆𝒏𝒅𝒆𝒛-𝒗𝒐𝒖𝒔 𝒎é𝒅𝒊𝒄𝒂𝒍𝒆</h3>
+                            <p class="project-description">
+                                Une solution de prise de 𝑬-𝑹𝒆𝒏𝒅𝒆𝒛-𝒗𝒐𝒖𝒔 𝒎é𝒅𝒊𝒄𝒂𝒍𝒆 complète avec interface utilisateur intuitive et gestion des patients. 
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Supabase (PostgreSQL)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/shop.png" alt="shomping app">
+                            <div class="project-overlay"></div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://shoestyle-hub-1.vercel.app/" class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">𝑬-𝒔𝒉𝒐𝒑</h3>
+                            <p class="project-description">
+                                Une Plateforme de commerce électronique complète avec interface utilisateur intuitive et gestion des commandes.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">shadcn-ui</span>
+                                <span class="tech-tag">formspree</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/landing page.jpg" alt="shomping app">
+                            <div class="project-overlay"></div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://nnangassejb10.github.io/landing_page/" class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Horizons Gabon</h3>
+                            <p class="project-description">
+                                Landing page pour valoriser le tourisme local au Gabon.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JS</span>
+                                <span class="tech-tag">Github-deployement</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/PortofolioVscode.png" alt="shomping app">
+                            <div class="project-overlay"></div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://nnangassejb10.github.io/Porfolio-Vscode-form/" class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">My Portofolio</h3>
+                            <p class="project-description">
+                                Portolio personnel pour présenter mes compétences et projets avec une interface representant l'IDE VS CODE
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JS</span> 
+                                <span class="tech-tag">Github-deployement</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/calculator_age.png" alt="calculator">
+                            <div class="project-overlay"></div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://nnangassejb10.github.io/Javascript-calculator/" class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">JS - Calculatrice Age</h3>
+                            <p class="project-description">
+                                Interface interactive pour calculer l'age en années, mois et jours à partir de la date de naissance saisie.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JS</span>
+                                <span class="tech-tag">Github-deployement</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/ongulaire.jpeg" alt="Ongulaire">
+                            <div class="project-overlay"></div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://nnangassejb10.github.io/Web-Site-Ongulaire/" class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Ongulaire-reservation</h3>
+                            <p class="project-description">
+                                Interface permettant une prise de rendez-vous simple pour faire la manucure.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JS</span>
+                                <span class="tech-tag">Github-deployement</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project7 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/salon coiffure.png" alt="E-coiffure Platform">
+                            <div class="project-overlay"></div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://gabon-styles-connect.vercel.app/" class="project-link"
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">𝑬-𝒄𝒐𝒊𝒇𝒇𝒖𝒓𝒆 𝑷𝒍𝒂𝒕𝒇𝒐𝒓𝒎</h3>
+                            <p class="project-description">
+                                solution digitale de gestion de salon de coiffure en ligne avec réservation et paiement en ligne.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">shadcn-ui</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">vite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">Expériences</h2>
+                <p class="section-description">
+                    Mon parcours professionnel et mon expérience dans le domaine.
+                </p>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h3 class="experience-role">Informaticien - Team community manager - Sportif Gabonais</h3>
+                        <p class="experience-company">Partenaire - Gabonais - (LBV-Gabon)</p>
+                        <p class="experience-period">Janvier 2026 - Actuellement </p>
+                    </div>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h3 class="experience-role">Stagiaire Informaticien - Dévelopeur</h3>
+                        <p class="experience-company">Hopital Sino - Gabonais - (LBV-Gabon)</p>
+                        <p class="experience-period">juillet 2025 - Novembre 2025</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-role"> Stagiaire Dévelopeur</h3>
+                        <p class="experience-company">ANINF (Agence Nationale des Infrastructures Numériques et des Fréquences, LBV-Gabon ) </p>
+                        <p class="experience-period">Février 2024 - Août 2024 </p>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-role">Stagiaire Informaticien</h3>
+                        <p class="experience-company">Société Tunisienne de l'Électricité et du Gaz (STEG, Tunis-Tunisie)</p>
+                        <p class="experience-period">2021 - 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formation Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">Formations</h2>
+                <p class="section-description">
+                    Mon parcours académique.
+                </p>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h3 class="experience-role">Master1 en Sécurité Informatique</h3>
+                        <p class="experience-company">Institut Africaine d'Informatique - (IAI - LBV-Gabon)</p>
+                        <p class="experience-period">Actuellement</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-role"> Master1 en alternance</h3>
+                        <p class="experience-company">Polytech Intl - (Tunis-Tunisie)</p>
+                        <p class="experience-period">septembre 2024 - à ce jour </p>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-role">Dimplomé en Génie logiciel et Système d'Information(GLSI)</h3>
+                        <p class="experience-company">Polytech Intl - (Tunis-Tunisie)</p>
+                        <p class="experience-period">2024</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-role">Bac série F3 (Electrotechnique)</h3>
+                        <p class="experience-company">Lycée Technique National Omar Bongo(LTNOB)  - (LBV-Gabon)</p>
+                        <p class="experience-period">2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-description">
+                    Contactez-moi pour échanger sur d’éventuelles opportunités.
+                </p>
+                <div class="contact-card">
+                    <div class="contact-item">
+                        <p class="contact-label">Email</p>
+                        <p class="contact-value">nnanggloirejb@email.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <p class="contact-label">Phone</p>
+                        <p class="contact-value">+241 062088356</p>
+                        <p class="contact-value">+241 074216514</p>
+                        <p class="contact-value">+216 52441268</p>
+                    </div>
+                    <div class="contact-item">
+                        <p class="contact-label">Localisation</p>
+                        <p class="contact-value">LBV, Gabon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
