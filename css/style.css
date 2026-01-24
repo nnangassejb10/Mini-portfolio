@@ -491,6 +491,11 @@ body {
     object-fit: cover;
     object-position: center;
 }
+.project-image {
+  max-width: 100%;
+  display: block;
+  margin: 20px auto;
+}
 
 .profile-glow {
     position: absolute;
