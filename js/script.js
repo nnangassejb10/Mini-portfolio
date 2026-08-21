@@ -40,6 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (targetSection) {
                 const navHeight = document.querySelector('.nav').offsetHeight;
                 const targetPosition = targetSection.offsetTop - navHeight;
+
+                navLinks.forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href') === targetId);
+                });
+                history.replaceState(null, '', targetId);
                 
                 window.scrollTo({
                     top: targetPosition,
@@ -250,17 +255,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Add intersection observer for navbar active states
+    const setActiveNavLinks = function(sectionId) {
+        navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${sectionId}`);
+        });
+    };
+
     const navObserver = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Remove active class from all nav links
-                navLinks.forEach(link => link.classList.remove('active'));
-                
-                // Add active class to corresponding nav link
-                const activeLink = document.querySelector(`[href="#${entry.target.id}"]`);
-                if (activeLink) {
-                    activeLink.classList.add('active');
-                }
+                setActiveNavLinks(entry.target.id);
             }
         });
     }, {
@@ -272,6 +276,13 @@ document.addEventListener('DOMContentLoaded', function() {
     sectionsWithIds.forEach(section => {
         navObserver.observe(section);
     });
+
+    if (window.location.hash) {
+        const initialSection = document.querySelector(window.location.hash);
+        if (initialSection && initialSection.matches('section[id]')) {
+            setActiveNavLinks(initialSection.id);
+        }
+    }
 
     // Add CSS for active nav links
     const style = document.createElement('style');
